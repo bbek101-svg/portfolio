@@ -26,16 +26,16 @@ function Nav() {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase">About</li>
+              <li className="ml-10 text-sm uppercase">01. About</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase">Projects</li>
+              <li className="ml-10 text-sm uppercase">02. Projects</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase">Skills</li>
+              <li className="ml-10 text-sm uppercase">03. Skills</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-sm uppercase">Contact</li>
+              <li className="ml-10 text-sm uppercase">04. Contact</li>
             </Link>
           </ul>
           <div onClick={handleOpen} className="md:hidden">
@@ -85,19 +85,19 @@ function Nav() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li className="py-4 text-sm">About</li>
+                <li className="py-4 text-sm">01. About</li>
               </Link>
 
               <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+                <li className="py-4 text-sm">02. Projects</li>
               </Link>
 
               <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+                <li className="py-4 text-sm">03. Skills</li>
               </Link>
 
               <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+                <li className="py-4 text-sm">04. Contact</li>
               </Link>
             </ul>
 
