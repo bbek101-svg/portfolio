@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Meta from "../components/Meta";
 import Nav from "../components/Nav";
 import About from "../components/About";
+import Skills from "../components/Skills";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
+      <Skills />
     </div>
   );
 }
