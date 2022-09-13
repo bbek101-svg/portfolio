@@ -11,14 +11,17 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
         alt="/"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-2xl text-white tracking-widest text-center">
+        <h3 className="mb-4 text-2xl text-white tracking-widest text-center">
           {title}
         </h3>
-        {tags.map((tag) => (
-          <p className="pb-4 pt-2 text-white text-center">{tag}</p>
+        {tags.map((tag, index) => (
+          <p className="p-2 text-white text-center inline bg-slate-600 rounded-xl m-4">
+            {tag}
+            {(index + 1) % 4 == 0 ? <br /> : ""}
+          </p>
         ))}
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 text-lg cusror-pointer">
+          <p className=" mt-4 text-center py-3 rounded-lg bg-white text-gray-700 text-lg cusror-pointer">
             Details
           </p>
         </Link>
