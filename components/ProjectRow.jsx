@@ -17,7 +17,7 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
         {tags.map((tag, index) => (
           <p className="p-2 text-white text-center inline bg-slate-600 rounded-xl m-4">
             {tag}
-            {(index + 1) % 4 == 0 ? <br /> : ""}
+            {(index + 1) % 4 == 0 ? <br className="mb-4 mt-4" /> : ""}
           </p>
         ))}
         <Link href={projectUrl}>
