@@ -58,7 +58,7 @@ function Nav() {
               <li className="ml-10 text-sm uppercase">04. Contact</li>
             </Link>
           </ul>
-          <div onClick={handleOpen} className="md:hidden">
+          <div onClick={handleOpen} className="md:hidden cursor-pointer">
             <MenuIcon fontSize="large" />
           </div>
         </div>
