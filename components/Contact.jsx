@@ -1,8 +1,9 @@
-import React from "react";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import Link from "next/link";
 
 function Contact() {
   return (
-    <div className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           I reply fast!
@@ -15,14 +16,14 @@ function Contact() {
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name</label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className="rounded-lg p-3 flex border-gray-300"
                     type="text"
                   />
                 </div>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    className=" rounded-lg p-3 flex border-gray-300"
                     type="email"
                   />
                 </div>
@@ -30,14 +31,23 @@ function Contact() {
               <div className="grid w-full py-2 gap-4">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Message</label>
-                  <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
-                    type="textarea"
-                  />
+                  <textarea
+                    className="rounded-lg p-3"
+                    cols={10}
+                    rows={10}
+                  ></textarea>
                 </div>
               </div>
+              <button className="w-full p-3 mt-4">Send Message</button>
             </form>
           </div>
+        </div>
+        <div className="flex justify-center py-12">
+          <Link href="/">
+            <div className="rounded-full p-4 shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300">
+              <ArrowCircleUpIcon fontSize="large" className="text-[#5651e5]" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

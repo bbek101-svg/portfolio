@@ -5,16 +5,33 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SendIcon from "@mui/icons-material/Send";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 function Nav() {
   const [open, setOpen] = useState(false);
+  const [shadowEffect, setShadowEffect] = useState(false);
 
   const handleOpen = () => {
     setOpen(!open);
   };
-
+  //   its gonna run one time
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadowEffect(true);
+      } else {
+        setShadowEffect(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
   return (
-    <div className="fixed w-full h-[80px] shadow-xl z-[100]">
+    <div
+      className={
+        shadowEffect
+          ? "fixed w-full h-[80px] shadow-xl z-[100]"
+          : "fixed w-full h-[80px] z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
           src="/../public/assets/Bibek.png"
