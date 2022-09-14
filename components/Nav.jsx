@@ -33,25 +33,28 @@ function Nav() {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/Bibek.png"
-          alt="/"
-          width="150"
-          height="50"
-        />
+        <Link href="/">
+          <Image
+            src="/../public/assets/Bibek.png"
+            alt="/"
+            width="150"
+            height="50"
+            className="cursor-pointer"
+          />
+        </Link>
 
         <div>
           <ul className="hidden md:flex">
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-sm uppercase">01. About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#projects">
               <li className="ml-10 text-sm uppercase">02. Projects</li>
             </Link>
-            <Link href="/">
+            <Link href="/#skills">
               <li className="ml-10 text-sm uppercase">03. Skills</li>
             </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-sm uppercase">04. Contact</li>
             </Link>
           </ul>
@@ -79,12 +82,16 @@ function Nav() {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/Bibek.png"
-                alt="/"
-                width="100"
-                height="40"
-              />
+              <Link href="/">
+                <Image
+                  src="/../public/assets/Bibek.png"
+                  alt="/"
+                  width="100"
+                  height="40"
+                  className="cursor-pointer"
+                />
+              </Link>
+
               <div
                 onClick={handleOpen}
                 className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer"
@@ -101,19 +108,19 @@ function Nav() {
           {/* menu */}
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
-              <Link href="/">
+              <Link href="/#about">
                 <li className="py-4 text-sm">01. About</li>
               </Link>
 
-              <Link href="/">
+              <Link href="/#projects">
                 <li className="py-4 text-sm">02. Projects</li>
               </Link>
 
-              <Link href="/">
+              <Link href="/#skills">
                 <li className="py-4 text-sm">03. Skills</li>
               </Link>
 
-              <Link href="/">
+              <Link href="/#contact">
                 <li className="py-4 text-sm">04. Contact</li>
               </Link>
             </ul>

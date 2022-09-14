@@ -13,8 +13,9 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
+
       <Contact />
     </div>
   );

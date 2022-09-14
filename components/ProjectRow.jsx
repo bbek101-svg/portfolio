@@ -21,7 +21,7 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
           </p>
         ))}
         <Link href={projectUrl}>
-          <p className=" mt-4 text-center py-3 rounded-lg bg-white text-gray-700 text-lg cusror-pointer">
+          <p className="cursor-pointer mt-4 text-center py-3 rounded-lg bg-white text-gray-700 text-lg cusror-pointer">
             Details
           </p>
         </Link>
