@@ -1,7 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import homepage from "../public/assets/projects/homepage.png";
+import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
+import { projects } from "../components/projectdata";
 
 function whale() {
+  console.log(projects);
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -19,6 +23,39 @@ function whale() {
           </h2>
           <h3>React JS/ Express JS/ Node JS/ MongoDB</h3>
         </div>
+      </div>
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
+        <div className="col-span-4">
+          <p className="uppercase tracking-widest">
+            Whale Succulent E-commerce Website
+          </p>
+          <h2>Overview</h2>
+          <p>
+            An e-commerce platform for byuing and selling Succulent plants. The
+            platform was built using MERN (MongoDB, Express.js, React.js and
+            Node) with an addition of GraphQL for querying purposes. React along
+            with Material UI and Framer motion was used for creating a seemless
+            and intuitive User Interface where as the backend was build using
+            Node, express and GraphQL. GraphQL was used for making queries to
+            the MongoDB database. All the technologies were self taught which
+            provided a great learning experience of the MERN stack.
+          </p>
+          <button className="px-6 py-2 mt-4 mr-8">Demo</button>
+          <button className="px-6 py-2 mt-4 mr-8">Github</button>
+        </div>
+        <div className="col-span-4 md:col-span-1 p-4 rounded-xl">
+          <div className="p-2">
+            <p className="text-center pb-2">Technologies</p>
+            {projects[0].tags.map((tag) => (
+              <div className="grid grid-cols-3 md:grid-cols-1">
+                <p className="text-gray-600 py-2 flex items-center">
+                  <RadioButtonCheckedIcon className="pr-1" /> {tag}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <Link href="/#projects">Back</Link>
       </div>
     </div>
   );

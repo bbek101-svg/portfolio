@@ -6,9 +6,24 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import SendIcon from "@mui/icons-material/Send";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+
 function Nav() {
   const [open, setOpen] = useState(false);
   const [shadowEffect, setShadowEffect] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [navColor, setNavColor] = useState("#1f2937");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (router.asPath === "/whale" || router.asPath === "/portfolio") {
+      setNavBg("transparent");
+      setNavColor("#ecf0f3");
+    } else {
+      setNavBg("#ecf0f3");
+      setNavColor("#1f2937");
+    }
+  }, [router]);
 
   const handleOpen = () => {
     setOpen(!open);
@@ -26,6 +41,7 @@ function Nav() {
   }, []);
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadowEffect
           ? "fixed w-full h-[80px] shadow-xl z-[100]"
@@ -44,7 +60,7 @@ function Nav() {
         </Link>
 
         <div>
-          <ul className="hidden md:flex">
+          <ul style={{ color: `${navColor}` }} className="hidden md:flex">
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase">01. About</li>
             </Link>
