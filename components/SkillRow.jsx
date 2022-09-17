@@ -6,7 +6,7 @@ function SkillRow({ skill }) {
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
         <div className="m-auto">
           <Image
-            alt={`${skills}`}
+            alt={`${skill}`}
             src={`/../public/assets/skills/${skill}.png`}
             width="64px"
             height="64px"
