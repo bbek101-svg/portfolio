@@ -1,5 +1,6 @@
 import Meta from "./Meta";
 import Image from "next/image";
+import Bibek from "../public/assets/Bibek.png";
 
 function About() {
   return (
@@ -37,7 +38,7 @@ function About() {
         <div className=" w-full h-auto m-auto rounded-xl border flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image
             className="rounded-xl"
-            src="/../public/assets/portrait.jpg"
+            src={Bibek}
             alt="Bibek"
             width={600}
             height={400}
