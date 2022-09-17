@@ -1,13 +1,47 @@
-import Image from "next/image";
 import React from "react";
 import SkillRow from "./SkillRow";
+import c from "../public/assets/skills/c.png";
+import express from "../public/assets/skills/express.png";
+import github from "../public/assets/skills/github.png";
+import graphql from "../public/assets/skills/graphql.png";
+import java from "../public/assets/skills/java.png";
+import javascript from "../public/assets/skills/javascript.png";
+import jira from "../public/assets/skills/jira.png";
+import mongodb from "../public/assets/skills/mongodb.png";
+import mysql from "../public/assets/skills/mysql.png";
+import next from "../public/assets/skills/next.png";
+import nodejs from "../public/assets/skills/nodejs.png";
+import python from "../public/assets/skills/python.png";
+import sass from "../public/assets/skills/sass.png";
+import react from "../public/assets/skills/react.png";
+import tailwind from "../public/assets/skills/tailwind-css.png";
 
 function Skills() {
-  const frontend = ["next", "react", "tailwind-css", "sass", "javascript"];
-  const backend = ["express", "graphql", "nodejs"];
-  const database = ["mongodb", "mysql"];
-  const programming = ["c", "java", "python"];
-  const tools = ["github", "jira"];
+  const frontend = [
+    { name: "next", skillImg: next },
+    { name: "react", skillImg: react },
+    { name: "tailwind-css", skillImg: tailwind },
+    { name: "sass", skillImg: sass },
+    { name: "javascript", skillImg: javascript },
+  ];
+  const backend = [
+    { name: "express", skillImg: express },
+    { name: "graphql", skillImg: graphql },
+    { name: "nodejs", skillImg: nodejs },
+  ];
+  const database = [
+    { name: "mongodb", skillImg: mongodb },
+    { name: "mysql", skillImg: mysql },
+  ];
+  const programming = [
+    { name: "c", skillImg: c },
+    { name: "java", skillImg: java },
+    { name: "python", skillImg: python },
+  ];
+  const tools = [
+    { name: "github", skillImg: github },
+    { name: "jira", skillImg: jira },
+  ];
 
   return (
     <div id="skills" className="w-full lg:h-full p-2">
