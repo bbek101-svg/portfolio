@@ -47,8 +47,8 @@ function whale() {
           <div className="p-2">
             <p className="text-center pb-2">Technologies</p>
             {projects[0].tags.map((tag, index) => (
-              <div className="grid grid-cols-3 md:grid-cols-1">
-                <p className="text-gray-600 py-2 flex items-center">
+              <div key={index} className="grid grid-cols-3 md:grid-cols-1">
+                <p key={index} className="text-gray-600 py-2 flex items-center">
                   <RadioButtonCheckedIcon key={index} className="pr-1" /> {tag}
                 </p>
               </div>

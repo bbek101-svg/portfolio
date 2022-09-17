@@ -117,7 +117,7 @@ function Nav() {
             </div>
             <div className="border-b border-black-500 my-5">
               <p className="w-[85%] md:w-[90%] py-4">
-                Knock Knock... Let's work together
+                Knock Knock Let us work together
               </p>
             </div>
           </div>
