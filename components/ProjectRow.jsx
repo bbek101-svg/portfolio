@@ -15,7 +15,10 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
           {title}
         </h3>
         {tags.map((tag, index) => (
-          <p className="p-2 text-white md:p-1 text-center inline bg-slate-600 rounded-xl m-4">
+          <p
+            key={index}
+            className="p-2 text-white md:p-1 text-center inline bg-slate-600 rounded-xl m-4"
+          >
             {tag}
             {(index + 1) % 4 == 0 ? <br className="mb-4 mt-4" /> : ""}
           </p>

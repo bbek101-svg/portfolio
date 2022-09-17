@@ -7,12 +7,14 @@ import ProjectRow from "./ProjectRow";
 function Projects() {
   const projects = [
     {
+      id: 1,
       title: "Whale Succulent E-commerce Website",
       projImage: whaleSucculent,
       projectUrl: "/whale",
       tags: ["React", "Mongo", "Express", "Node", "Stripe", "GraphQL"],
     },
     {
+      id: 2,
       title: "Portfolio",
       projImage: portfolio,
       projectUrl: "/portfolio",
@@ -29,6 +31,7 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <ProjectRow
+              key={project.id}
               title={project.title}
               projImage={project.projImage}
               projectUrl={project.projectUrl}

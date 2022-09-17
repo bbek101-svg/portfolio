@@ -18,40 +18,40 @@ function Skills() {
         <div className="py-4 flex flex-col justify-center">
           <h2 className="py-4 tracking-wider">Frontend</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {frontend.map((skill) => (
-              <SkillRow skill={skill} />
+            {frontend.map((skill, index) => (
+              <SkillRow skill={skill} key={index} />
             ))}
           </div>
         </div>
         <div className=" py-4 flex flex-col justify-center">
           <h2 className="py-4 tracking-wider">Backend</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {backend.map((skill) => (
-              <SkillRow skill={skill} />
+            {backend.map((skill, index) => (
+              <SkillRow skill={skill} key={index} />
             ))}
           </div>
         </div>
         <div className="py-4 flex flex-col justify-center">
           <h2 className="py-4 tracking-wider">Database</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {database.map((skill) => (
-              <SkillRow skill={skill} />
+            {database.map((skill, index) => (
+              <SkillRow skill={skill} key={index} />
             ))}
           </div>
         </div>
         <div className="py-4 flex flex-col justify-center">
           <h2 className="py-4 tracking-wider">Programming Languages</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {programming.map((skill) => (
-              <SkillRow skill={skill} />
+            {programming.map((skill, index) => (
+              <SkillRow skill={skill} key={index} />
             ))}
           </div>
         </div>
         <div className="py-4 flex flex-col justify-center">
           <h2 className="py-4 tracking-wider">Management Tools</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {tools.map((skill) => (
-              <SkillRow skill={skill} />
+            {tools.map((skill, index) => (
+              <SkillRow skill={skill} key={index} />
             ))}
           </div>
         </div>
