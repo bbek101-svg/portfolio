@@ -11,7 +11,7 @@ function Hero() {
             Hello, World!
           </p>
           <h1 className="py-4 text-gray-700">
-            I am <span className="text-[#5651e5]">Bibek</span>{" "}
+            I am <span className="text-[#FF6E6C]">Bibek</span>{" "}
             <span>Regmi</span>{" "}
           </h1>
 

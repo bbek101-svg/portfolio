@@ -46,7 +46,7 @@ function Skills() {
   return (
     <div id="skills" className="w-full lg:h-full p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="py-4 text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C]">
           My Arsenal
         </p>
         <div className="py-4 flex flex-col justify-center">

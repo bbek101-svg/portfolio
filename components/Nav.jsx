@@ -50,7 +50,7 @@ function Nav() {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <h2 className="cursor-pointer text-[#5651E5] tracking-wider">
+          <h2 className="cursor-pointer text-[#FF6E6C] tracking-wider">
             Bibek
           </h2>
         </Link>
