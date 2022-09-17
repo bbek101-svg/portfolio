@@ -50,13 +50,9 @@ function Nav() {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image
-            src="/../public/assets/Bibek.png"
-            alt="/"
-            width="150"
-            height="50"
-            className="cursor-pointer"
-          />
+          <h2 className="cursor-pointer text-[#5651E5] tracking-wider">
+            Bibek
+          </h2>
         </Link>
 
         <div>
@@ -99,13 +95,9 @@ function Nav() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image
-                  src="/../public/assets/Bibek.png"
-                  alt="/"
-                  width="100"
-                  height="40"
-                  className="cursor-pointer"
-                />
+                <h2 className="cursor-pointer text-[#5651E5] tracking-wider">
+                  Bibek
+                </h2>
               </Link>
 
               <div
