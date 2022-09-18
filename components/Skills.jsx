@@ -15,6 +15,7 @@ import python from "../public/assets/skills/python.png";
 import sass from "../public/assets/skills/sass.png";
 import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind-css.png";
+import Meta from "./Meta";
 
 function Skills() {
   const frontend = [
@@ -45,6 +46,7 @@ function Skills() {
 
   return (
     <div id="skills" className="w-full lg:h-full p-2">
+      <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C]">
           My Arsenal

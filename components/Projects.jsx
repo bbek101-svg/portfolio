@@ -3,6 +3,7 @@ import whaleSucculent from "../public/assets/projects/homepage.png";
 import portfolio from "../public/assets/projects/portfolio.png";
 import Link from "next/link";
 import ProjectRow from "./ProjectRow";
+import Meta from "./Meta";
 
 function Projects() {
   const projects = [
@@ -23,6 +24,7 @@ function Projects() {
   ];
   return (
     <div id="projects" className="w-full">
+      <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#FF6E6C]">
           Projects

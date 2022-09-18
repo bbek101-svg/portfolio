@@ -5,9 +5,12 @@ import portrait from "../public/assets/portrait.jpg";
 function About() {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <Meta title="About" />
+      <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
+          <p className="text-xl tracking-widest uppercase text-[#FF6E6C]">
+            About Me
+          </p>
           <h2 className="py-4 tracking-wider">A bit about myself</h2>
           <p className="py-2 text-gray-600">
             Hi! My name is Bibek and I enjoy developing products that provide
