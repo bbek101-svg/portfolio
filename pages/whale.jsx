@@ -5,7 +5,6 @@ import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { projects } from "../components/projectdata";
 
 function whale() {
-  console.log(projects);
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -29,7 +28,7 @@ function whale() {
           <p className="uppercase tracking-widest">
             Whale Succulent E-commerce Website
           </p>
-          <h2>Overview</h2>
+          <h2 className="py-2">Overview</h2>
           <p>
             An e-commerce platform for byuing and selling Succulent plants. The
             platform was built using MERN (MongoDB, Express.js, React.js and
