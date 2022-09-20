@@ -39,7 +39,9 @@ function Contact() {
                   ></textarea>
                 </div>
               </div>
-              <button className="w-full p-3 mt-4">Send Message</button>
+              <div className="w-full flex items-center justify-center">
+                <button className="p-3 mt-4 w-50">Send Message</button>
+              </div>
             </form>
           </div>
         </div>

@@ -13,7 +13,7 @@ function SkillRow({ skill }) {
     mongodb: "hover:text-[#47a248]",
     mysql: "hover:text-[#4479a1]",
     c: "hover:text-[#00599c]",
-    java: "hover:text-[#007396]",
+    java: "hover:text-[#F27500]",
     python: "hover:text-[#3776ab]",
     github: "hover:text-[#181717]",
     jira: "hover:text-[#0052cc]",
