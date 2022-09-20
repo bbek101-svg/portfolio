@@ -33,7 +33,7 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="flex flex-col">
-              <h3>{project.title}</h3>
+              <h3 key={project.id}>{project.title}</h3>
               <ProjectRow
                 key={project.id}
                 title={project.title}
