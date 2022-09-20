@@ -21,7 +21,7 @@ function Skills() {
   const frontend = [
     { name: "next", skillImg: next },
     { name: "react", skillImg: react },
-    { name: "tailwind-css", skillImg: tailwind },
+    { name: "tailwind", skillImg: tailwind },
     { name: "sass", skillImg: sass },
     { name: "javascript", skillImg: javascript },
   ];
@@ -45,7 +45,7 @@ function Skills() {
   ];
 
   return (
-    <div id="skills" className="w-full lg:h-full p-2">
+    <div id="skills" className="w-full lg:h-full p-2 px-4">
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C]">

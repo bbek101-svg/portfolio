@@ -3,7 +3,7 @@ import Link from "next/link";
 import Meta from "./Meta";
 function Contact() {
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen px-4">
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#FF6E6C]">

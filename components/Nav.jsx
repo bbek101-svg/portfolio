@@ -138,17 +138,17 @@ function Nav() {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <Link href="https://www.linkedin.com/in/bibek-regmi-7a3855154/">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
+                  <div className="flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#0C63BC] ease-in duration-100">
                     <LinkedInIcon />
                   </div>
                 </Link>
                 <Link href="https://github.com/bbek101-svg">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
+                  <div className="flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-cyan-500 ease-in duration-100">
                     <GitHubIcon />
                   </div>
                 </Link>
                 <Link href="mailto:bibek.regmi110@gmail.com">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
+                  <div className="flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-pink-500 ease-in duration-100">
                     <SendIcon />
                   </div>
                 </Link>
