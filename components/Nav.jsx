@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -44,8 +43,8 @@ function Nav() {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadowEffect
-          ? "fixed w-full h-[80px] shadow-xl z-[100]"
-          : "fixed w-full h-[80px] z-[100]"
+          ? "fixed w-full h-[80px] shadow-xl z-[100] px-2"
+          : "fixed w-full h-[80px] z-[100] px-2"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -58,16 +57,16 @@ function Nav() {
         <div>
           <ul style={{ color: `${navColor}` }} className="hidden md:flex">
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase">01. About</li>
+              <li className="ml-10 text-md uppercase">01. About</li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase">02. Projects</li>
+              <li className="ml-10 text-md uppercase">02. Projects</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase">03. Skills</li>
+              <li className="ml-10 text-md uppercase">03. Skills</li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase">04. Contact</li>
+              <li className="ml-10 text-md uppercase">04. Contact</li>
             </Link>
           </ul>
           <div onClick={handleOpen} className="md:hidden cursor-pointer">
@@ -117,19 +116,19 @@ function Nav() {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/#about">
-                <li className="py-4 text-sm">01. About</li>
+                <li className="py-4 text-md">01. About</li>
               </Link>
 
               <Link href="/#projects">
-                <li className="py-4 text-sm">02. Projects</li>
+                <li className="py-4 text-md">02. Projects</li>
               </Link>
 
               <Link href="/#skills">
-                <li className="py-4 text-sm">03. Skills</li>
+                <li className="py-4 text-md">03. Skills</li>
               </Link>
 
               <Link href="/#contact">
-                <li className="py-4 text-sm">04. Contact</li>
+                <li className="py-4 text-md">04. Contact</li>
               </Link>
             </ul>
 
@@ -138,15 +137,21 @@ function Nav() {
                 Lets have a chat
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
-                  <LinkedInIcon />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
-                  <GitHubIcon />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
-                  <SendIcon />
-                </div>
+                <Link href="https://www.linkedin.com/in/bibek-regmi-7a3855154/">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
+                    <LinkedInIcon />
+                  </div>
+                </Link>
+                <Link href="https://github.com/bbek101-svg">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
+                    <GitHubIcon />
+                  </div>
+                </Link>
+                <Link href="mailto:bibek.regmi110@gmail.com">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
+                    <SendIcon />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

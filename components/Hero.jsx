@@ -30,7 +30,7 @@ function Hero() {
           </p>
           <div className="flex items-center justify-between max-w-[300px] m-auto py-6">
             <Link href="https://www.linkedin.com/in/bibek-regmi-7a3855154/">
-              <div className="flex flex-col  min-h-[114.8px] items-center">
+              <div className="flex flex-col  min-h-[114.8px] items-center hover:text-[#0C63BC] ease-in-out duration-75">
                 <div
                   className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-100"
                   onMouseEnter={() => setLinkedinHover(true)}
@@ -50,7 +50,7 @@ function Hero() {
               </div>
             </Link>
             <Link href="https://github.com/bbek101-svg">
-              <div className="flex flex-col  min-h-[114.8px] items-center">
+              <div className="flex flex-col  min-h-[114.8px] items-center hover:text-cyan-500">
                 <div
                   className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-100"
                   onMouseEnter={() => setGithubHover(true)}
@@ -70,7 +70,7 @@ function Hero() {
               </div>
             </Link>
             <Link href="mailto:bibek.regmi110@gmail.com">
-              <div className="flex flex-col  min-h-[114.8px] items-center">
+              <div className="flex flex-col  min-h-[114.8px] items-center hover:text-pink-500">
                 <div
                   className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-100"
                   onMouseEnter={() => SetEmailHover(true)}
