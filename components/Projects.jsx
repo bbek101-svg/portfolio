@@ -32,7 +32,7 @@ function Projects() {
         <h2 className="py-4">A showcase of my works</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div className="flex flex-col">
+            <div key={project.id} className="flex flex-col">
               <h3>{project.title}</h3>
               <ProjectRow
                 key={project.id}
