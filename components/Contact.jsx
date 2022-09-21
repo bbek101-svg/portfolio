@@ -10,8 +10,8 @@ function Contact() {
           I reply fast!
         </p>
         <h2 className="py-4">Shoot Me a Message</h2>
-        <div className="grid w-full h-auto p-4">
-          <div className="p-4">
+        <div className="grid w-full h-auto py-4">
+          <div className="py-4">
             <form>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
@@ -40,7 +40,9 @@ function Contact() {
                 </div>
               </div>
               <div className="w-full flex items-center justify-center">
-                <button className="p-3 mt-4 w-50">Send Message</button>
+                <button className="p-3 mt-4 w-50 text-[#FF6E6C]">
+                  Send Message
+                </button>
               </div>
             </form>
           </div>
