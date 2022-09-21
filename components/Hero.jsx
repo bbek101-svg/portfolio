@@ -4,6 +4,8 @@ import SendIcon from "@mui/icons-material/Send";
 import { useState } from "react";
 import Meta from "./Meta";
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
+
 function Hero() {
   const [linkedinHover, setLinkedinHover] = useState(false);
   const [githubHover, setGithubHover] = useState(false);
@@ -14,15 +16,28 @@ function Hero() {
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] w-full h-full transition-height ease-in-out duration-100 mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
-            Hello, World!
-          </p>
+          <div className=" flex justify-center items-center uppercase text-sm tracking-widest text-gray-600">
+            <p>Hello, </p>
+            <Typewriter
+              options={{
+                strings: ["World!", "Aliens!", "Androids!"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
           <h1 className="py-4 text-gray-700">
             I am <span className="text-[#FF6E6C]">Bibek</span>{" "}
             <span>Regmi</span>{" "}
           </h1>
 
-          <h1 className="py-2 text-gray-700">A fullStack Web Developer</h1>
+          <h1 className="py-2 text-gray-700">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("A fullStack Web Developer").start();
+              }}
+            />
+          </h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             Hello, I am a full-stack web developer who enjoys builidng products
             on MERN tech stack. I specialize in React/Next.js, Express.js,
