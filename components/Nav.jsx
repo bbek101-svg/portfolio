@@ -57,16 +57,44 @@ function Nav() {
         <div>
           <ul style={{ color: `${navColor}` }} className="hidden md:flex">
             <Link href="/#about">
-              <li className="ml-10 text-md uppercase">01. About</li>
+              <li
+                className="ml-10 text-md uppercase relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out"
+              >
+                01. About
+              </li>
             </Link>
             <Link href="/#projects">
-              <li className="ml-10 text-md uppercase">02. Projects</li>
+              <li
+                className="ml-10 text-md uppercase relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out"
+              >
+                02. Projects
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-md uppercase">03. Skills</li>
+              <li
+                className="ml-10 text-md uppercase relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out"
+              >
+                03. Skills
+              </li>
             </Link>
             <Link href="/#contact">
-              <li className="ml-10 text-md uppercase">04. Contact</li>
+              <li
+                className="ml-10 text-md uppercase relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out"
+              >
+                04. Contact
+              </li>
             </Link>
           </ul>
           <div onClick={handleOpen} className="md:hidden cursor-pointer">
