@@ -38,8 +38,22 @@ function whale() {
             learn them by implementing them in a personal project. I am glad
             that this project turned out really fun.
           </p>
-          <button className="px-6 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-6 py-2 mt-4 mr-8">Github</button>
+          <button
+            className="px-4 py-2 mt-4 mr-8 w-50 relative z-10
+                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 hover:text-white 
+                   transition-colors duration-300 ease-in-out"
+          >
+            Demo
+          </button>
+          <button
+            className="px-4 py-2 mt-4 mr-8 w-50 relative z-10
+                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 hover:text-white 
+                   transition-colors duration-300 ease-in-out"
+          >
+            Github
+          </button>
         </div>
         <div className="col-span-4 md:col-span-1 p-4 rounded-xl">
           <div className="p-2">
