@@ -43,7 +43,7 @@ function Contact() {
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name</label>
                   <input
-                    className="rounded-lg p-3 flex border-gray-300"
+                    className="rounded-lg p-3 flex border-2 border-[#E9B3DA] focus:outline-none focus:border-2 focus:border-[#DE31A5]"
                     type="text"
                     name="name"
                   />
@@ -51,7 +51,7 @@ function Contact() {
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
-                    className=" rounded-lg p-3 flex border-gray-300"
+                    className=" rounded-lg p-3 flex border-2 border-[#E9B3DA] focus:outline-none focus:border-2 focus:border-[#DE31A5]"
                     type="email"
                     name="email"
                   />
@@ -61,7 +61,7 @@ function Contact() {
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
-                    className="rounded-lg p-3"
+                    className="rounded-lg p-3 border-2 border-[#E9B3DA] focus:outline-none focus:border-2 focus:border-[#DE31A5]"
                     cols={10}
                     rows={10}
                     name="message"
@@ -85,7 +85,7 @@ function Contact() {
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="rounded-full p-4 shadow-lg shadow-gray-400 cursor-pointer hover:scale-110 ease-in duration-300">
-              <ArrowCircleUpIcon fontSize="large" className="text-[#5651e5]" />
+              <ArrowCircleUpIcon fontSize="large" className="text-[#FF6E6C]" />
             </div>
           </Link>
         </div>
