@@ -1,7 +1,33 @@
 import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import Link from "next/link";
 import Meta from "./Meta";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bxbo6de",
+        "template_5msl9oq",
+        form.current,
+        "z9iql4d6-_N_YI-6I"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div id="contact" className="w-full lg:h-screen px-4">
       <Meta title="Bibek | Full Stack Developer" />
@@ -12,13 +38,14 @@ function Contact() {
         <h2 className="py-4">Shoot Me a Message</h2>
         <div className="grid w-full h-auto py-4">
           <div className="py-4">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name</label>
                   <input
                     className="rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    name="name"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -26,6 +53,7 @@ function Contact() {
                   <input
                     className=" rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    name="email"
                   />
                 </div>
               </div>
@@ -36,11 +64,12 @@ function Contact() {
                     className="rounded-lg p-3"
                     cols={10}
                     rows={10}
+                    name="message"
                   ></textarea>
                 </div>
               </div>
               <div className="w-full flex items-center justify-center">
-                <button className="p-3 mt-4 w-50 text-[#FF6E6C]">
+                <button type="submit" className="p-3 mt-4 w-50 ">
                   Send Message
                 </button>
               </div>
