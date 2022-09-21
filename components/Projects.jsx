@@ -33,7 +33,7 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="flex flex-col py-4">
-              <h3 key={project.id}>
+              <h3 className="tracking-wider text-[#FF6E6C]" key={project.id}>
                 {project.id}. {project.title}
               </h3>
               <ProjectRow

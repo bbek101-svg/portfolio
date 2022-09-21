@@ -3,6 +3,7 @@ import Link from "next/link";
 import portfolio from "../public/assets/projects/portfolio.png";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { projects } from "../components/projectdata";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 function whale() {
   return (
@@ -23,7 +24,7 @@ function whale() {
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className="uppercase tracking-widest">Portfolio</p>
+          <p className="uppercase tracking-widest text-[#FF6E6C]">Portfolio</p>
           <h2 className="py-2">Overview</h2>
           <p>
             My very own portfolio website showcasing all my skills and projects.
@@ -31,6 +32,11 @@ function whale() {
             Tailwind CSS with an aim to learn more about the technologies. The
             portfolio website is fully responsive utilizing Tailwind CSS and is
             hosted on vercel platform.
+          </p>
+          <p className="py-2">
+            The idea for my portfolio was to play around with new technologies,
+            learn them by implementing them in a personal project. I am glad
+            that this project turned out really fun.
           </p>
           <button className="px-6 py-2 mt-4 mr-8">Demo</button>
           <button className="px-6 py-2 mt-4 mr-8">Github</button>
@@ -47,7 +53,12 @@ function whale() {
             ))}
           </div>
         </div>
-        <Link href="/#projects">Back</Link>
+        <Link href="/#projects">
+          <div className=" w-full flex items-center justify-center cursor-pointer hover:text-[#FF6E6C]">
+            <ArrowBackIosIcon fontSize="small" />
+            <p>Back</p>
+          </div>
+        </Link>
       </div>
     </div>
   );

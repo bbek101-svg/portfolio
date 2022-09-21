@@ -3,6 +3,7 @@ import Link from "next/link";
 import homepage from "../public/assets/projects/homepage.png";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { projects } from "../components/projectdata";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 function whale() {
   return (
@@ -26,7 +27,7 @@ function whale() {
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className="uppercase tracking-widest">
+          <p className="uppercase tracking-widest text-[#FF6E6C]">
             Whale Succulent E-commerce Website
           </p>
           <h2 className="py-2">Overview</h2>
@@ -49,13 +50,18 @@ function whale() {
             {projects[0].tags.map((tag, index) => (
               <div key={index} className="grid grid-cols-3 md:grid-cols-1">
                 <p key={index} className="text-gray-600 py-2 flex items-center">
-                  <RadioButtonCheckedIcon key={index} className="pr-1" /> {tag}
+                  <RadioButtonCheckedIcon key={index} className="pr-1 " /> {tag}
                 </p>
               </div>
             ))}
           </div>
         </div>
-        <Link href="/#projects">Back</Link>
+        <Link href="/#projects">
+          <div className=" w-full flex items-center justify-center cursor-pointer hover:text-[#FF6E6C]">
+            <ArrowBackIosIcon fontSize="small" />
+            <p>Back</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
