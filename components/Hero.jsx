@@ -23,6 +23,8 @@ function Hero() {
                 strings: ["World!", "Aliens!", "Androids!"],
                 autoStart: true,
                 loop: true,
+                delay: 500,
+                changeDelay: 70,
               }}
             />
           </div>
