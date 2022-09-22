@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import portfolio from "../public/assets/projects/portfolio.png";
+import portfolioPic from "../public/assets/projects/portfolio.png";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { projects } from "../components/projectdata";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
-function whale() {
+function portfolio() {
   return (
     <div className="w-full">
       <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
         <Image
-          src={portfolio}
+          src={portfolioPic}
           alt="portfolio"
           className="absolute z-1"
           layout="fill"
@@ -83,4 +83,4 @@ function whale() {
   );
 }
 
-export default whale;
+export default portfolio;

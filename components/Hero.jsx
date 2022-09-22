@@ -5,6 +5,7 @@ import { useState } from "react";
 import Meta from "./Meta";
 import Link from "next/link";
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 function Hero() {
   const [linkedinHover, setLinkedinHover] = useState(false);
@@ -45,16 +46,30 @@ function Hero() {
             on MERN tech stack. I specialize in React/Next.js, Express.js,
             Node.js and MongoDB along with GraphQL and Apollo.
           </p>
-          <div className="flex items-center justify-between max-w-[300px] m-auto py-6">
+          <motion.div className="flex items-center justify-between max-w-[300px] m-auto py-6">
             <Link href="https://www.linkedin.com/in/bibek-regmi-7a3855154/">
               <div className="flex flex-col  min-h-[114.8px] items-center hover:text-[#0C63BC] ease-in-out duration-100">
-                <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-100"
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: -50,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.1,
+                    type: "spring",
+                  }}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer ease-in duration-100"
                   onMouseEnter={() => setLinkedinHover(true)}
                   onMouseLeave={() => setLinkedinHover(false)}
                 >
                   <LinkedInIcon />
-                </div>
+                </motion.div>
                 <p
                   className={
                     linkedinHover
@@ -68,13 +83,27 @@ function Hero() {
             </Link>
             <Link href="https://github.com/bbek101-svg">
               <div className="flex flex-col  min-h-[114.8px] items-center hover:text-cyan-500 ease-in-out duration-100">
-                <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-100"
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: -50,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.2,
+                    type: "spring",
+                  }}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer ease-in duration-100"
                   onMouseEnter={() => setGithubHover(true)}
                   onMouseLeave={() => setGithubHover(false)}
                 >
                   <GitHubIcon />
-                </div>
+                </motion.div>
                 <p
                   className={
                     githubHover
@@ -88,13 +117,27 @@ function Hero() {
             </Link>
             <Link href="mailto:bibek.regmi110@gmail.com">
               <div className="flex flex-col  min-h-[114.8px] items-center hover:text-pink-500 ease-in-out duration-100">
-                <div
-                  className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-100"
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: -50,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.3,
+                    type: "spring",
+                  }}
+                  whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                  className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer ease-in duration-100"
                   onMouseEnter={() => SetEmailHover(true)}
                   onMouseLeave={() => SetEmailHover(false)}
                 >
                   <SendIcon />
-                </div>
+                </motion.div>
                 <p
                   className={
                     emailHover
@@ -106,7 +149,7 @@ function Hero() {
                 </p>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

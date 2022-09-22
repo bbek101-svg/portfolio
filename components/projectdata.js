@@ -14,6 +14,6 @@ export const projects = [
     title: "Portfolio",
     projImage: portfolio,
     projectUrl: "/portfolio",
-    tags: ["Next", "Tailwind"],
+    tags: ["Next", "Tailwind", "Material UI", "Framer Motion"],
   },
 ];

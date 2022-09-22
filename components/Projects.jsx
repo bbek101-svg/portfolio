@@ -19,7 +19,7 @@ function Projects() {
       title: "Portfolio",
       projImage: portfolio,
       projectUrl: "/portfolio",
-      tags: ["Next", "Tailwind"],
+      tags: ["Next", "Tailwind", "MaterialUI", "FramerMotion"],
     },
   ];
   return (
