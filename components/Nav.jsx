@@ -6,6 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import SendIcon from "@mui/icons-material/Send";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -49,52 +50,122 @@ function Nav() {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <h2 className="cursor-pointer text-[#FF6E6C] tracking-wider">
+          <motion.h2
+            initial={{
+              opacity: 0,
+              y: -100,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.7,
+              delay: 0.1,
+            }}
+            whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+            className="cursor-pointer text-[#FF6E6C] tracking-wider relative z-10
+            before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+            hover:before:scale-x-100 
+            transition-colors duration-300 ease-in-out"
+          >
             Bibek
-          </h2>
+          </motion.h2>
         </Link>
 
         <div>
           <ul style={{ color: `${navColor}` }} className="hidden md:flex">
             <Link href="/#about">
-              <li
+              <motion.li
+                initial={{
+                  opacity: 0,
+                  y: -100,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.2,
+                }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
                 01. About
-              </li>
+              </motion.li>
             </Link>
             <Link href="/#projects">
-              <li
+              <motion.li
+                initial={{
+                  opacity: 0,
+                  y: -100,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.3,
+                }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
                 02. Projects
-              </li>
+              </motion.li>
             </Link>
             <Link href="/#skills">
-              <li
+              <motion.li
+                initial={{
+                  opacity: 0,
+                  y: -100,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.4,
+                }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
                 03. Skills
-              </li>
+              </motion.li>
             </Link>
             <Link href="/#contact">
-              <li
+              <motion.li
+                initial={{
+                  opacity: 0,
+                  y: -100,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.5,
+                }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
                 04. Contact
-              </li>
+              </motion.li>
             </Link>
           </ul>
           <div onClick={handleOpen} className="md:hidden cursor-pointer">
