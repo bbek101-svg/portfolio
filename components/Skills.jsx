@@ -16,6 +16,7 @@ import sass from "../public/assets/skills/sass.png";
 import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind-css.png";
 import Meta from "./Meta";
+import { motion } from "framer-motion";
 
 function Skills() {
   const frontend = [
@@ -48,11 +49,25 @@ function Skills() {
     <div id="skills" className="w-full lg:h-full p-2 px-4">
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C]">
+        <motion.p
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C]"
+        >
           My Arsenal
-        </p>
+        </motion.p>
         <div className="py-4 flex flex-col justify-center">
-          <h2 className="py-4 tracking-wider">Frontend</h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="py-4 tracking-wider"
+          >
+            Frontend
+          </motion.h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {frontend.map((skill, index) => (
               <SkillRow skill={skill} key={index} />
@@ -60,7 +75,15 @@ function Skills() {
           </div>
         </div>
         <div className=" py-4 flex flex-col justify-center">
-          <h2 className="py-4 tracking-wider">Backend</h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="py-4 tracking-wider"
+          >
+            Backend
+          </motion.h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {backend.map((skill, index) => (
               <SkillRow skill={skill} key={index} />
@@ -68,7 +91,15 @@ function Skills() {
           </div>
         </div>
         <div className="py-4 flex flex-col justify-center">
-          <h2 className="py-4 tracking-wider">Database</h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="py-4 tracking-wider"
+          >
+            Database
+          </motion.h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {database.map((skill, index) => (
               <SkillRow skill={skill} key={index} />
@@ -76,7 +107,15 @@ function Skills() {
           </div>
         </div>
         <div className="py-4 flex flex-col justify-center">
-          <h2 className="py-4 tracking-wider">Programming Languages</h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="py-4 tracking-wider"
+          >
+            Programming Languages
+          </motion.h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {programming.map((skill, index) => (
               <SkillRow skill={skill} key={index} />
@@ -84,7 +123,15 @@ function Skills() {
           </div>
         </div>
         <div className="py-4 flex flex-col justify-center">
-          <h2 className="py-4 tracking-wider">Management Tools</h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="py-4 tracking-wider"
+          >
+            Management Tools
+          </motion.h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {tools.map((skill, index) => (
               <SkillRow skill={skill} key={index} />

@@ -12,8 +12,8 @@ function About() {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <motion.div className="col-span-2">
           <motion.p
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5 }}
             className="text-xl tracking-widest uppercase text-[#FF6E6C]"
@@ -21,8 +21,8 @@ function About() {
             About Me
           </motion.p>
           <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="py-4 tracking-wider"

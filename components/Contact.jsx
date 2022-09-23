@@ -3,6 +3,7 @@ import Link from "next/link";
 import Meta from "./Meta";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { motion } from "framer-motion";
 
 function Contact() {
   const form = useRef();
@@ -32,14 +33,35 @@ function Contact() {
     <div id="contact" className="w-full lg:h-screen px-4">
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="text-xl tracking-widest uppercase text-[#FF6E6C]">
+        <motion.p
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-xl tracking-widest uppercase text-[#FF6E6C]"
+        >
           I reply fast!
-        </p>
-        <h2 className="py-4">Shoot Me a Message</h2>
+        </motion.p>
+        <motion.h2
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="py-4"
+        >
+          Shoot Me a Message
+        </motion.h2>
         <div className="grid w-full h-auto py-4">
           <div className="py-4">
-            <form ref={form} onSubmit={sendEmail}>
-              <div className="grid md:grid-cols-2 gap-4 w-full py-2">
+            <motion.form
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, staggerChildren: 0.5 }}
+              ref={form}
+              onSubmit={sendEmail}
+            >
+              <motion.div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Name</label>
                   <input
@@ -56,8 +78,8 @@ function Contact() {
                     name="email"
                   />
                 </div>
-              </div>
-              <div className="grid w-full py-2 gap-4">
+              </motion.div>
+              <motion.div className="grid w-full py-2 gap-4">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
@@ -67,8 +89,8 @@ function Contact() {
                     name="message"
                   ></textarea>
                 </div>
-              </div>
-              <div className="w-full flex items-center justify-center">
+              </motion.div>
+              <motion.div className="w-full flex items-center justify-center">
                 <button
                   type="submit"
                   className="p-3 mt-4 w-50 relative z-10
@@ -78,8 +100,8 @@ function Contact() {
                 >
                   Send Message
                 </button>
-              </div>
-            </form>
+              </motion.div>
+            </motion.form>
           </div>
         </div>
         <div className="flex justify-center py-12">
