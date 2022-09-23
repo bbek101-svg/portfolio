@@ -194,7 +194,7 @@ function Nav() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <h2 className="cursor-pointer text-[#5651E5] tracking-wider">
+                <h2 className="cursor-pointer text-[#FF6E6C] tracking-wider">
                   Bibek
                 </h2>
               </Link>
@@ -233,7 +233,7 @@ function Nav() {
             </ul>
 
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+              <p className="uppercase tracking-widest text-[#FF6E6C]">
                 Lets have a chat
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
