@@ -64,10 +64,11 @@ function Nav() {
               delay: 0.1,
             }}
             whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-            className="cursor-pointer text-[#FF6E6C] tracking-wider relative z-10
-            before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
-            hover:before:scale-x-100 
-            transition-colors duration-300 ease-in-out"
+            className={
+              open
+                ? "hidden"
+                : "cursor-pointer text-[#FF6E6C] tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
+            }
           >
             Bibek
           </motion.h2>
