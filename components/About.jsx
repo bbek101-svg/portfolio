@@ -2,6 +2,7 @@ import Meta from "./Meta";
 import Image from "next/image";
 import portrait from "../public/assets/portrait.jpg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 function About() {
   return (
     <div
@@ -11,15 +12,23 @@ function About() {
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <motion.div className="col-span-2">
-          <motion.p
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-xl tracking-widest uppercase text-[#FF6E6C]"
-          >
-            About Me
-          </motion.p>
+          <Link href="/#about">
+            <motion.p
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5 }}
+              className="text-xl w-full inline tracking-widest uppercase text-[#FF6E6C] cursor-pointer
+                  relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out
+              "
+            >
+              About Me
+            </motion.p>
+          </Link>
+
           <motion.h2
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}

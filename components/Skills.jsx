@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import SkillRow from "./SkillRow";
 import c from "../public/assets/skills/c.png";
 import express from "../public/assets/skills/express.png";
@@ -49,15 +50,23 @@ function Skills() {
     <div id="skills" className="w-full lg:h-full p-2 px-4">
       <Meta title="Bibek | Full Stack Developer" />
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <motion.p
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C]"
-        >
-          My Arsenal
-        </motion.p>
+        <Link href="/#skills">
+          <motion.p
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="py-4 text-xl tracking-widest uppercase text-[#FF6E6C] inline cursor-pointer
+          relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out
+          "
+          >
+            My Arsenal
+          </motion.p>
+        </Link>
+
         <div className="py-4 flex flex-col justify-center">
           <motion.h2
             initial={{ opacity: 0, x: -100 }}
