@@ -68,9 +68,19 @@ function Hero() {
                   onMouseEnter={() => setLinkedinHover(true)}
                   onMouseLeave={() => setLinkedinHover(false)}
                 >
-                  <LinkedInIcon />
+                  <motion.div
+                    whileHover={{
+                      rotate: 360,
+                      transition: { duration: 0.5, delay: 0.3 },
+                    }}
+                  >
+                    <LinkedInIcon />
+                  </motion.div>
                 </motion.div>
-                <p
+                <motion.p
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, type: "spring" }}
                   className={
                     linkedinHover
                       ? "inline py-2 ease-in-out duration-100"
@@ -78,7 +88,7 @@ function Hero() {
                   }
                 >
                   LinkedIn
-                </p>
+                </motion.p>
               </div>
             </Link>
             <Link href="https://github.com/bbek101-svg">
@@ -102,9 +112,19 @@ function Hero() {
                   onMouseEnter={() => setGithubHover(true)}
                   onMouseLeave={() => setGithubHover(false)}
                 >
-                  <GitHubIcon />
+                  <motion.div
+                    whileHover={{
+                      rotate: 360,
+                      transition: { duration: 0.5, delay: 0.3 },
+                    }}
+                  >
+                    <GitHubIcon />
+                  </motion.div>
                 </motion.div>
-                <p
+                <motion.p
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, type: "spring" }}
                   className={
                     githubHover
                       ? "inline py-2 ease-in-out duration-100"
@@ -112,7 +132,7 @@ function Hero() {
                   }
                 >
                   Github
-                </p>
+                </motion.p>
               </div>
             </Link>
             <Link href="mailto:bibek.regmi110@gmail.com">
@@ -136,9 +156,19 @@ function Hero() {
                   onMouseEnter={() => SetEmailHover(true)}
                   onMouseLeave={() => SetEmailHover(false)}
                 >
-                  <SendIcon />
+                  <motion.div
+                    whileHover={{
+                      rotate: 360,
+                      transition: { duration: 0.5, delay: 0.3 },
+                    }}
+                  >
+                    <SendIcon />
+                  </motion.div>
                 </motion.div>
-                <p
+                <motion.p
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, type: "spring" }}
                   className={
                     emailHover
                       ? "inline py-2 ease-in-out duration-100"
@@ -146,7 +176,7 @@ function Hero() {
                   }
                 >
                   E-mail
-                </p>
+                </motion.p>
               </div>
             </Link>
           </motion.div>
