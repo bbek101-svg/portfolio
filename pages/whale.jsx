@@ -21,8 +21,8 @@ function whale() {
 
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white p-2 z-10">
           <motion.h2
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="py-2 text-white z-11"
@@ -30,8 +30,8 @@ function whale() {
             Whale Succulent E-commerce Website
           </motion.h2>
           <motion.h3
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
@@ -42,8 +42,8 @@ function whale() {
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
           <motion.p
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="uppercase tracking-widest text-[#FF6E6C]"
@@ -51,8 +51,8 @@ function whale() {
             Whale Succulent E-commerce Website
           </motion.p>
           <motion.h2
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             className="py-2 text-gray-700"

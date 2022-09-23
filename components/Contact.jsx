@@ -35,8 +35,8 @@ function Contact() {
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <Link href="/#contact">
           <motion.p
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl tracking-widest uppercase text-[#FF6E6C] inline cursor-pointer
@@ -51,8 +51,8 @@ function Contact() {
         </Link>
 
         <motion.h2
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="py-4 text-gray-700"
