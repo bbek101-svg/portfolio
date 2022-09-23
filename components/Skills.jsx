@@ -73,7 +73,7 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider"
+            className="py-4 tracking-wider text-gray-700"
           >
             Frontend
           </motion.h2>
@@ -89,7 +89,7 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider"
+            className="py-4 tracking-wider text-gray-700"
           >
             Backend
           </motion.h2>
@@ -105,7 +105,7 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider"
+            className="py-4 tracking-wider text-gray-700"
           >
             Database
           </motion.h2>
@@ -121,7 +121,7 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider"
+            className="py-4 tracking-wider text-gray-700"
           >
             Programming Languages
           </motion.h2>
@@ -137,7 +137,7 @@ function Skills() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider"
+            className="py-4 tracking-wider text-gray-700"
           >
             Management Tools
           </motion.h2>

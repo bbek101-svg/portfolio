@@ -49,7 +49,7 @@ function Projects() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="py-4"
+          className="py-4 text-gray-700"
         >
           A showcase of my works
         </motion.h2>

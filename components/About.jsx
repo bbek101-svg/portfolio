@@ -34,7 +34,7 @@ function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="py-4 tracking-wider"
+            className="py-4 tracking-wider text-gray-700"
           >
             A bit about myself
           </motion.h2>

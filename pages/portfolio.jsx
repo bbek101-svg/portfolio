@@ -54,7 +54,7 @@ function portfolio() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-2"
+            className="py-2 text-gray-700"
           >
             Overview
           </motion.h2>
