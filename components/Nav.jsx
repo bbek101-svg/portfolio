@@ -13,15 +13,18 @@ function Nav() {
   const [shadowEffect, setShadowEffect] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [navColor, setNavColor] = useState("#1f2937");
+  const [menuColor, setMenuColor] = useState("#374151");
   const router = useRouter();
 
   useEffect(() => {
     if (router.asPath === "/whale" || router.asPath === "/portfolio") {
       setNavBg("transparent");
       setNavColor("#ecf0f3");
+      setMenuColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
       setNavColor("#1f2937");
+      setMenuColor("#374151");
     }
   }, [router]);
 
@@ -169,7 +172,11 @@ function Nav() {
               </motion.li>
             </Link>
           </ul>
-          <div onClick={handleOpen} className="md:hidden cursor-pointer">
+          <div
+            onClick={handleOpen}
+            className="md:hidden cursor-pointer"
+            style={{ color: `${menuColor}` }}
+          >
             <MenuIcon fontSize="large" />
           </div>
         </div>
