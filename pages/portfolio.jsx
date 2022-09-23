@@ -4,6 +4,7 @@ import portfolioPic from "../public/assets/projects/portfolio.png";
 import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { projects } from "../components/projectdata";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import { motion } from "framer-motion";
 
 function portfolio() {
   return (
@@ -18,56 +19,113 @@ function portfolio() {
           objectFit="cover"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 text-white p-2">
-          <h2 className="py-2">Portfolio Website</h2>
-          <h3>React JS/ Next JS/ Tailwind</h3>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="py-2"
+          >
+            Portfolio Website
+          </motion.h2>
+          <motion.h3
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            React JS/ Next JS/ Tailwind
+          </motion.h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p className="uppercase tracking-widest text-[#FF6E6C]">Portfolio</p>
-          <h2 className="py-2">Overview</h2>
-          <p>
+          <motion.p
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="uppercase tracking-widest text-[#FF6E6C]"
+          >
+            Portfolio
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="py-2"
+          >
+            Overview
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
             My very own portfolio website showcasing all my skills and projects.
             I undertook the process of builidng the website in Next JS and
             Tailwind CSS with an aim to learn more about the technologies. The
             portfolio website is fully responsive utilizing Tailwind CSS and is
             hosted on vercel platform.
-          </p>
-          <p className="py-2">
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="py-2"
+          >
             The idea for my portfolio was to play around with new technologies,
             learn them by implementing them in a personal project. I am glad
             that this project turned out really fun.
-          </p>
+          </motion.p>
           <Link href="/">
-            <button
+            <motion.button
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               className="px-4 py-2 mt-4 mr-8 w-50 relative z-10
                    before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 hover:text-white 
                    transition-colors duration-300 ease-in-out"
             >
               Demo
-            </button>
+            </motion.button>
           </Link>
 
           <Link href="https://github.com/bbek101-svg/portfolio">
-            <button
+            <motion.button
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
               className="px-4 py-2 mt-4 mr-8 w-50 relative z-10
                    before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 hover:text-white 
                    transition-colors duration-300 ease-in-out"
             >
               Github
-            </button>
+            </motion.button>
           </Link>
         </div>
         <div className="col-span-4 md:col-span-1 p-4 rounded-xl">
           <div className="p-2">
-            <p className="text-center pb-2">Technologies</p>
+            <p className="pb-2 tracking-wider">Technologies</p>
             {projects[1].tags.map((tag, index) => (
               <div key={index} className="grid grid-cols-3 md:grid-cols-1">
-                <p key={index} className="text-gray-600 py-2 flex items-center">
+                <motion.p
+                  initial={{ opacity: 0, y: -100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 1 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                  key={index}
+                  className="text-gray-600 py-2 flex items-center"
+                >
                   <RadioButtonCheckedIcon key={index} className="pr-1" /> {tag}
-                </p>
+                </motion.p>
               </div>
             ))}
           </div>
