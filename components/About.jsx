@@ -18,6 +18,7 @@ function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, amount: 1 }}
               transition={{ duration: 0.5 }}
+              whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
               className="text-xl w-full inline tracking-widest uppercase text-[#FF6E6C] cursor-pointer
                   relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
