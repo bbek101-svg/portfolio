@@ -10,7 +10,7 @@ html{
 @layer base{
   body{
     /* you can use [] in tailwind for custom colors */
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#fdfdfd] text-[#333333] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6{
@@ -27,6 +27,6 @@ html{
   }
 
   button {
-    @apply rounded-xl uppercase border-red-400 border-2 text-[#FF6E6C]
+    @apply rounded-xl uppercase border-[#FFCC00] border-2 text-[#FFCC00]
   }
 }

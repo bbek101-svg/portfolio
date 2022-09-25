@@ -34,9 +34,9 @@ function Projects() {
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-            className="text-xl tracking-widest uppercase text-[#FF6E6C] inline cursor-pointer
+            className="text-xl tracking-widest uppercase text-[#ffcc00] inline cursor-pointer
           relative z-10
-                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#105ff9] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out
           "

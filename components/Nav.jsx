@@ -19,11 +19,11 @@ function Nav() {
   useEffect(() => {
     if (router.asPath === "/whale" || router.asPath === "/portfolio") {
       setNavBg("transparent");
-      setNavColor("#ecf0f3");
+      setNavColor("#fdfdfd");
       setMenuColor("#ecf0f3");
     } else {
-      setNavBg("#ecf0f3");
-      setNavColor("#1f2937");
+      setNavBg("#fdfdfd");
+      setNavColor("#333333");
       setMenuColor("#374151");
     }
   }, [router]);
@@ -70,7 +70,7 @@ function Nav() {
             className={
               open
                 ? "hidden"
-                : "cursor-pointer text-[#FF6E6C] tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#374151] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
+                : "cursor-pointer text-[#ffcc00] tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#105ff9] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
             }
           >
             Bibek
@@ -95,7 +95,7 @@ function Nav() {
                 }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
-                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
@@ -118,7 +118,7 @@ function Nav() {
                 }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
-                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
@@ -141,7 +141,7 @@ function Nav() {
                 }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
-                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
@@ -164,7 +164,7 @@ function Nav() {
                 }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
-                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#FF6E6C] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
               >
