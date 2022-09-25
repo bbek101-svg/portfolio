@@ -58,7 +58,7 @@ function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="py-4 text-gray-700"
         >
-          Shoot Me a Message
+          Say Hello
         </motion.h2>
         <div className="grid w-full h-auto py-4">
           <div className="py-4">
@@ -107,7 +107,7 @@ function Contact() {
                    hover:before:scale-x-100 hover:text-white 
                    transition-colors duration-300 ease-in-out"
                 >
-                  Say Hello
+                  Send
                 </button>
               </motion.div>
             </motion.form>
