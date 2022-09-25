@@ -27,6 +27,6 @@ html{
   }
 
   button {
-    @apply rounded-xl uppercase border-[#FFCC00] border-2 text-[#FFCC00]
+    @apply rounded-xl uppercase border-[#a456f0] border-2 text-[#a456f0]
   }
 }

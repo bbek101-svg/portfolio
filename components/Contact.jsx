@@ -40,10 +40,10 @@ function Contact() {
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-            className="text-xl tracking-widest uppercase text-[#ffcc00] inline cursor-pointer
+            className="text-xl tracking-widest uppercase text-[#a456f0] inline cursor-pointer
           
           relative z-10
-                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#105ff9] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out"
           >
@@ -103,7 +103,7 @@ function Contact() {
                 <button
                   type="submit"
                   className="p-3 mt-4 w-50 relative z-10
-                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#a456f0] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 hover:text-white 
                    transition-colors duration-300 ease-in-out"
                 >
@@ -125,7 +125,7 @@ function Contact() {
               >
                 <ArrowCircleUpIcon
                   fontSize="large"
-                  className="text-[#ffcc00]"
+                  className="text-[#a456f0]"
                 />
               </motion.div>
             </motion.div>

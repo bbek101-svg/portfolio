@@ -45,7 +45,7 @@ function portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="uppercase tracking-widest text-[#ffcc00]"
+            className="uppercase tracking-widest text-[#a456f0]"
           >
             Portfolio
           </motion.p>
@@ -88,7 +88,7 @@ function portfolio() {
               viewport={{ once: true, amount: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               className="px-4 py-2 mt-4 mr-8 w-50 relative z-10
-                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#a456f0] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 hover:text-white 
                    transition-colors duration-300 ease-in-out"
             >
@@ -103,7 +103,7 @@ function portfolio() {
               viewport={{ once: true, amount: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
               className="px-4 py-2 mt-4 mr-8 w-50 relative z-10
-                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#a456f0] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 hover:text-white 
                    transition-colors duration-300 ease-in-out"
             >
@@ -131,7 +131,7 @@ function portfolio() {
           </div>
         </div>
         <Link href="/#projects">
-          <div className=" w-full flex items-center justify-start cursor-pointer hover:text-[#FF6E6C]">
+          <div className=" w-full flex items-center justify-start cursor-pointer hover:text-[#a456f0]">
             <ArrowBackIosIcon fontSize="small" />
             <p>Back</p>
           </div>

@@ -48,7 +48,7 @@ function boostyyc() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="uppercase tracking-widest text-[#ffcc00]"
+            className="uppercase tracking-widest text-[#a456f0]"
           >
             Boost YYC
           </motion.p>
@@ -111,7 +111,7 @@ function boostyyc() {
           </div>
         </div>
         <Link href="/#projects">
-          <div className=" w-full flex items-center justify-start cursor-pointer hover:text-[#FF6E6C]">
+          <div className=" w-full flex items-center justify-start cursor-pointer hover:text-[#a456f0]">
             <div>
               <ArrowBackIosIcon fontSize="small" />
             </div>

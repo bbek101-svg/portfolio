@@ -30,7 +30,7 @@ function Hero() {
             />
           </div>
           <h1 className="py-4 text-gray-700">
-            I am <span className="text-[#ffcc00]">Bibek</span>{" "}
+            I am <span className="text-[#a456f0]">Bibek</span>{" "}
             <span>Regmi</span>{" "}
           </h1>
 

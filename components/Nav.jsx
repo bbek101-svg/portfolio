@@ -74,7 +74,7 @@ function Nav() {
             className={
               open
                 ? "hidden"
-                : "cursor-pointer text-[#ffcc00] tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#105ff9] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
+                : "cursor-pointer text-[#a456f0] tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
             }
           >
             Bibek
@@ -205,7 +205,7 @@ function Nav() {
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <h2 className="cursor-pointer text-[#FF6E6C] tracking-wider">
+                <h2 className="cursor-pointer text-[#a456f0] tracking-wider">
                   Bibek
                 </h2>
               </Link>
@@ -244,7 +244,7 @@ function Nav() {
             </ul>
 
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#FF6E6C]">
+              <p className="uppercase tracking-widest text-[#a456f0]">
                 Lets have a chat
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
