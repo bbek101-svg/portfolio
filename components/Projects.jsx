@@ -1,6 +1,7 @@
 import Image from "next/image";
 import whaleSucculent from "../public/assets/projects/homepage.png";
 import portfolio from "../public/assets/projects/portfolio.png";
+import unknown from "../public/assets/projects/unknown.png";
 import Link from "next/link";
 import ProjectRow from "./ProjectRow";
 import Meta from "./Meta";
@@ -21,6 +22,19 @@ function Projects() {
       projImage: portfolio,
       projectUrl: "/portfolio",
       tags: ["Next", "Tailwind", "MaterialUI", "FramerMotion"],
+    },
+    {
+      id: 3,
+      title: "Boost YYC",
+      projImage: unknown,
+      projectUrl: "/boostyyc",
+      tags: [
+        "Next",
+        "MaterialUI",
+        "GoogleMapsAPI",
+        "JavaBackend",
+        "FacebookAPI",
+      ],
     },
   ];
   return (

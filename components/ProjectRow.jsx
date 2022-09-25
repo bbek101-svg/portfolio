@@ -26,10 +26,10 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
           {tags.map((tag, index) => (
             <motion.p
               key={index}
-              className="p-2 text-gray-700 md:p-2 text-center inline bg-white rounded-xl m-4"
+              className="p-2 text-gray-700 lg:p-2 text-center inline bg-white rounded-xl m-4"
             >
               {tag}
-              {(index + 1) % 4 == 0 ? <br className="mb-4 mt-4" /> : ""}
+              {(index + 1) % 3 == 0 ? <br className="mb-4 mt-4" /> : ""}
             </motion.p>
           ))}
         </motion.div>

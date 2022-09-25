@@ -17,7 +17,11 @@ function Nav() {
   const router = useRouter();
 
   useEffect(() => {
-    if (router.asPath === "/whale" || router.asPath === "/portfolio") {
+    if (
+      router.asPath === "/whale" ||
+      router.asPath === "/portfolio" ||
+      router.asPath === "/boostyyc"
+    ) {
       setNavBg("transparent");
       setNavColor("#fdfdfd");
       setMenuColor("#ecf0f3");
