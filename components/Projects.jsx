@@ -26,7 +26,7 @@ function Projects() {
   return (
     <div id="projects" className="w-full px-4">
       <Meta title="Bibek | Full Stack Developer" />
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+      <motion.div className="max-w-[1240px] mx-auto px-2 py-16">
         <Link href="/#projects">
           <motion.p
             initial={{ opacity: 0, y: -100 }}
@@ -70,7 +70,7 @@ function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

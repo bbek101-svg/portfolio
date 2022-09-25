@@ -5,6 +5,7 @@ import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 import { projects } from "../components/projectdata";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 function whale() {
   return (
@@ -125,8 +126,11 @@ function whale() {
           </div>
         </div>
         <Link href="/#projects">
-          <div className=" w-full flex items-center justify-center cursor-pointer hover:text-[#FF6E6C]">
-            <ArrowBackIosIcon fontSize="small" />
+          <div className=" w-full flex items-center justify-start cursor-pointer hover:text-[#FF6E6C]">
+            <div>
+              <ArrowBackIosIcon fontSize="small" />
+            </div>
+
             <p>Back</p>
           </div>
         </Link>

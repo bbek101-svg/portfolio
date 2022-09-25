@@ -88,7 +88,8 @@ function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 1 }}
           transition={{ duration: 0.5 }}
-          className=" w-full h-auto m-auto rounded-xl border flex items-center justify-center p-2 hover:scale-105 ease-in duration-300"
+          whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+          className=" w-full h-auto m-auto rounded-xl border flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 cursor-pointer"
         >
           <Image
             className="rounded-xl"

@@ -131,7 +131,7 @@ function portfolio() {
           </div>
         </div>
         <Link href="/#projects">
-          <div className=" w-full flex items-center justify-center cursor-pointer hover:text-[#FF6E6C]">
+          <div className=" w-full flex items-center justify-start cursor-pointer hover:text-[#FF6E6C]">
             <ArrowBackIosIcon fontSize="small" />
             <p>Back</p>
           </div>
