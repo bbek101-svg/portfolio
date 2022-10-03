@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
-function whale() {
+function Whale() {
   const darkMode = useSelector((state) => state.themeToggle.value);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -157,4 +157,4 @@ function whale() {
   );
 }
 
-export default whale;
+export default Whale;

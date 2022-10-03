@@ -7,7 +7,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
-function portfolio() {
+function Portfolio() {
   const darkMode = useSelector((state) => state.themeToggle.value);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -155,4 +155,4 @@ function portfolio() {
   );
 }
 
-export default portfolio;
+export default Portfolio;

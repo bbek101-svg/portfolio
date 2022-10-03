@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
-function boostyyc() {
+function Boostyyc() {
   const darkMode = useSelector((state) => state.themeToggle.value);
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -137,4 +137,4 @@ function boostyyc() {
   );
 }
 
-export default boostyyc;
+export default Boostyyc;
