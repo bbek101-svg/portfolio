@@ -1,7 +1,12 @@
+
+
+## Go to https://portfolio-bbek101-svg.vercel.app/
+## and check it out
+## Would love some feedbacks
+## bibek.regmi110@gmail.com
+
+## Trying it manually??
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
 First, run the development server:
 
 ```bash
@@ -33,7 +38,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-## Go to https://portfolio-bbek101-svg.vercel.app/
-## and check it out
-## Would love some feedbacks
-## bibek.regmi110@gmail.com
+
