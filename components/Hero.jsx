@@ -80,13 +80,13 @@ function Hero() {
                     onMouseLeave={() => setLinkedinHover(false)}
                   >
                     <motion.div
-                      className="dark:text-[#F2F2F2]"
+                      className="dark:text-[#F2F2F2] "
                       whileHover={{
                         rotate: 360,
                         transition: { duration: 0.5, delay: 0.3 },
                       }}
                     >
-                      <LinkedInIcon />
+                      <LinkedInIcon className="hover:text-[#0C63BC]" />
                     </motion.div>
                   </motion.div>
                   <motion.p
@@ -131,7 +131,7 @@ function Hero() {
                         transition: { duration: 0.5, delay: 0.3 },
                       }}
                     >
-                      <GitHubIcon />
+                      <GitHubIcon className="hover:text-cyan-500" />
                     </motion.div>
                   </motion.div>
                   <motion.p
@@ -176,7 +176,7 @@ function Hero() {
                         transition: { duration: 0.5, delay: 0.3 },
                       }}
                     >
-                      <SendIcon />
+                      <SendIcon className="hover:text-pink-500" />
                     </motion.div>
                   </motion.div>
                   <motion.p
