@@ -10,7 +10,7 @@ html{
 @layer base{
   body{
     /* you can use [] in tailwind for custom colors */
-    @apply bg-[#fdfdfd] text-[#333333] tracking-wide
+    @apply bg-[#fdfdfd] text-[#333333] tracking-wide dark:bg-[#001b1d] dark:text-[#f2f2f2]
   }
 
   h1, h2, h3, h4, h5, h6{

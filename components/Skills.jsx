@@ -18,8 +18,10 @@ import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind-css.png";
 import Meta from "./Meta";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 function Skills() {
+  const darkMode = useSelector((state) => state.themeToggle.value);
   const frontend = [
     { name: "next", skillImg: next },
     { name: "react", skillImg: react },
@@ -47,104 +49,106 @@ function Skills() {
   ];
 
   return (
-    <div id="skills" className="w-full lg:h-full p-2 px-4">
-      <Meta title="Bibek | Full Stack Developer" />
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <Link href="/#skills">
-          <motion.p
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-xl tracking-widest max-w-max uppercase text-[#a456f0] inline cursor-pointer
+    <div className={darkMode ? "dark" : ""}>
+      <div id="skills" className="dark:bg-[#001B1D] w-full lg:h-full p-2 px-4">
+        <Meta title="Bibek | Full Stack Developer" />
+        <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+          <Link href="/#skills">
+            <motion.p
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-xl tracking-widest max-w-max uppercase text-[#a456f0] inline cursor-pointer
           relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
                    transition-colors duration-300 ease-in-out
           "
-          >
-            My Arsenal
-          </motion.p>
-        </Link>
+            >
+              My Arsenal
+            </motion.p>
+          </Link>
 
-        <div className="py-4 flex flex-col justify-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider text-gray-700"
-          >
-            Frontend
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {frontend.map((skill, index) => (
-              <SkillRow skill={skill} key={index} />
-            ))}
+          <div className="py-4 flex flex-col justify-center">
+            <motion.h2
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="py-4 tracking-wider text-gray-700 dark:text-[#F2F2F2]"
+            >
+              Frontend
+            </motion.h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-[#F2F2F2]">
+              {frontend.map((skill, index) => (
+                <SkillRow skill={skill} key={index} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className=" py-4 flex flex-col justify-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider text-gray-700"
-          >
-            Backend
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {backend.map((skill, index) => (
-              <SkillRow skill={skill} key={index} />
-            ))}
+          <div className=" py-4 flex flex-col justify-center">
+            <motion.h2
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="py-4 tracking-wider text-gray-700 dark:text-[#F2F2F2]"
+            >
+              Backend
+            </motion.h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-[#F2F2F2]">
+              {backend.map((skill, index) => (
+                <SkillRow skill={skill} key={index} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="py-4 flex flex-col justify-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider text-gray-700"
-          >
-            Database
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {database.map((skill, index) => (
-              <SkillRow skill={skill} key={index} />
-            ))}
+          <div className="py-4 flex flex-col justify-center dark:text-[#F2F2F2]">
+            <motion.h2
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="py-4 tracking-wider text-gray-700 dark:text-[#F2F2F2]"
+            >
+              Database
+            </motion.h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-[#F2F2F2]">
+              {database.map((skill, index) => (
+                <SkillRow skill={skill} key={index} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="py-4 flex flex-col justify-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider text-gray-700"
-          >
-            Programming Languages
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {programming.map((skill, index) => (
-              <SkillRow skill={skill} key={index} />
-            ))}
+          <div className="py-4 flex flex-col justify-center dark:text-[#F2F2F2]">
+            <motion.h2
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="py-4 tracking-wider text-gray-700 dark:text-[#F2F2F2]"
+            >
+              Programming Languages
+            </motion.h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-[#F2F2F2]">
+              {programming.map((skill, index) => (
+                <SkillRow skill={skill} key={index} />
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="py-4 flex flex-col justify-center">
-          <motion.h2
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="py-4 tracking-wider text-gray-700"
-          >
-            Management Tools
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {tools.map((skill, index) => (
-              <SkillRow skill={skill} key={index} />
-            ))}
+          <div className="py-4 flex flex-col justify-center dark:text-[#F2F2F2]">
+            <motion.h2
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="py-4 tracking-wider text-gray-700 dark:text-[#F2F2F2]"
+            >
+              Management Tools
+            </motion.h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-[#F2F2F2]">
+              {tools.map((skill, index) => (
+                <SkillRow skill={skill} key={index} />
+              ))}
+            </div>
           </div>
         </div>
       </div>

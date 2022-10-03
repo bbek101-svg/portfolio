@@ -5,10 +5,13 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Nav from "../components/Nav";
+import { useSelector } from "react-redux";
 
 export default function Home() {
+  const darkMode = useSelector((state) => state.themeToggle.value);
+
   return (
-    <div>
+    <div className={darkMode ? "dark" : ""}>
       <Meta title="Bibek | Full Stack Developer" />
       <Nav />
       <Hero />

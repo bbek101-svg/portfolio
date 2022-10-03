@@ -23,7 +23,7 @@ function SkillRow({ skill }) {
 
   return (
     <div
-      className={`p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer ${col}`}
+      className={`p-6 shadow-xl dark:shadow-[#002A2e] rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer ${col}`}
     >
       <motion.div
         initial={{ opacity: 0, y: -100 }}

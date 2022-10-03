@@ -7,6 +7,9 @@ import SendIcon from "@mui/icons-material/Send";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import ToggleOffIcon from "@mui/icons-material/ToggleOff";
+import { useSelector, useDispatch } from "react-redux";
+import { toggle } from "./feaures/theme/themeToggleSlice";
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -15,7 +18,8 @@ function Nav() {
   const [navColor, setNavColor] = useState("#1f2937");
   const [menuColor, setMenuColor] = useState("#374151");
   const router = useRouter();
-
+  const darkMode = useSelector((state) => state.themeToggle.value);
+  const toggleDarkMode = useDispatch();
   useEffect(() => {
     if (
       router.asPath === "/whale" ||
@@ -26,8 +30,6 @@ function Nav() {
       setNavColor("#fdfdfd");
       setMenuColor("#ecf0f3");
     } else {
-      setNavBg("#fdfdfd");
-      setNavColor("#333333");
       setMenuColor("#374151");
     }
   }, [router]);
@@ -46,6 +48,25 @@ function Nav() {
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
+
+  useEffect(() => {
+    if (darkMode) {
+      setNavBg("#001B1D");
+      setNavColor("#fdfdfd");
+    } else {
+      setNavBg("#fdfdfd");
+      setNavColor("#333333");
+    }
+    if (
+      router.asPath === "/whale" ||
+      router.asPath === "/portfolio" ||
+      router.asPath === "/boostyyc"
+    ) {
+      setNavBg("transparent");
+      setNavColor("#fdfdfd");
+      setMenuColor("#ecf0f3");
+    }
+  }, [darkMode]);
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -101,7 +122,7 @@ function Nav() {
                 className="ml-10 text-md uppercase relative z-10
                    before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
                    hover:before:scale-x-100 
-                   transition-colors duration-300 ease-in-out"
+                   transition-colors duration-300 ease-in-out "
               >
                 01. About
               </motion.li>
@@ -175,6 +196,14 @@ function Nav() {
                 04. Contact
               </motion.li>
             </Link>
+            <div
+              className="flex items-center justify-center ml-4"
+              onClick={() => toggleDarkMode(toggle())}
+            >
+              <li>
+                <ToggleOffIcon />
+              </li>
+            </div>
           </ul>
           <div
             onClick={handleOpen}

@@ -7,7 +7,17 @@ export const projects = [
     title: "Whale Succulent E-commerce Website",
     projImage: whaleSucculent,
     projectUrl: "/whale",
-    tags: ["React", "Mongo", "Express", "Node", "Stripe", "GraphQL"],
+    tags: [
+      "React",
+      "Mongo",
+      "Express",
+      "Node",
+      "Stripe",
+      "Apollo Client",
+      "GraphQL",
+      "FramerMotion",
+      "MaterialUI",
+    ],
   },
   {
     id: 2,
