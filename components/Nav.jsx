@@ -58,9 +58,9 @@ function Nav() {
       setNavColor("#333333");
     }
     if (
-      router.asPath === "/Whale" ||
-      router.asPath === "/Portfolio" ||
-      router.asPath === "/Boostyyc"
+      router.asPath === "/whale" ||
+      router.asPath === "/portfolio" ||
+      router.asPath === "/boostyyc"
     ) {
       setNavBg("transparent");
       setNavColor("#fdfdfd");

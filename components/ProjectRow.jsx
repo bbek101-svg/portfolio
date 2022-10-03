@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-function ProjectRow({ title, projImage, projectUrl, tags, darkMode }) {
+function ProjectRow({ title, projImage, projectUrl, tags }) {
   return (
     <Link href={projectUrl}>
       <motion.div
