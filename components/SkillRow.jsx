@@ -8,7 +8,7 @@ function SkillRow({ skill }) {
     tailwind: "hover:text-[#38BDF8]",
     sass: "hover:text-[#cc6699]",
     javascript: "hover:text-[#f7df1e]",
-    express: "hover:text-[#000000]",
+    express: "hover:text-[#f7df1e]",
     graphql: "hover:text-[#e535ab]",
     nodejs: "hover:text-[#339933]",
     mongodb: "hover:text-[#47a248]",
@@ -16,7 +16,7 @@ function SkillRow({ skill }) {
     c: "hover:text-[#00599c]",
     java: "hover:text-[#F27500]",
     python: "hover:text-[#3776ab]",
-    github: "hover:text-[#181717]",
+    github: "hover:text-[#0052cc]",
     jira: "hover:text-[#0052cc]",
   };
   let col = `${colors[skill.name]}`;

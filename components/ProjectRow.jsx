@@ -12,7 +12,7 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
         viewport={{ once: true, amount: 1 }}
         transition={{ duration: 0.5, staggerChildren: 0.5 }}
         whileHover={{ scale: 1.1, transition: { duration: 0.5 } }}
-        className="cursor-pointer relative flex items-center hover:my-4 justify-center h-auto w-full shadow-xl dark:shadow-[#002A2e] shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709DFF]"
+        className="cursor-pointer relative flex items-center hover:my-4 justify-center h-auto w-full shadow-xl dark:shadow-[#002A2e] shadow-gray-400 rounded-xl p-4 group hover:bg-[#001B1D]"
       >
         <Image
           className="rounded-xl group-hover:opacity-10"

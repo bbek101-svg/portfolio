@@ -14,7 +14,11 @@ function Hero() {
   const [emailHover, SetEmailHover] = useState(false);
   const darkMode = useSelector((state) => state.themeToggle.value);
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div
+      className={
+        darkMode ? "dark duration-300 ease-in-out" : "duration-300 ease-in-out"
+      }
+    >
       <div
         id="home"
         className="  dark:bg-[#001B1D] w-full h-screen transition-height text-center"
