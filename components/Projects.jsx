@@ -23,7 +23,7 @@ function Projects() {
       title: "Portfolio",
       projImage: portfolio,
       projectUrl: "/portfolio",
-      tags: ["Next", "Tailwind", "MaterialUI", "FramerMotion"],
+      tags: ["Next", "Tailwind", "MaterialUI", "FramerMotion", "Redux"],
     },
     {
       id: 3,
