@@ -227,7 +227,7 @@ function Nav() {
         <div
           className={
             open
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-300"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#001B1D] dark:text-[#FDFDFD] bg-[#ecf0f3] p-10 ease-in-out duration-300"
               : "fixed left-[-100%] top-0 p-10 ease-in-out duration-300"
           }
         >
@@ -241,7 +241,7 @@ function Nav() {
 
               <div
                 onClick={handleOpen}
-                className="rounded-full shadow-lg shadow-gray-300 p-3 cursor-pointer"
+                className="rounded-full shadow-lg dark:shadow-[#002A2e] shadow-gray-300 p-3 cursor-pointer"
               >
                 <CloseIcon />
               </div>
@@ -270,6 +270,14 @@ function Nav() {
               <Link href="/#contact">
                 <li className="py-4 text-md">04. Contact</li>
               </Link>
+              <div
+                className="py-4 text-md"
+                onClick={() => toggleDarkMode(toggle())}
+              >
+                <li>
+                  <ToggleOffIcon /> Dark Mode
+                </li>
+              </div>
             </ul>
 
             <div className="pt-40">
@@ -278,17 +286,17 @@ function Nav() {
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <Link href="https://www.linkedin.com/in/bibek-regmi-7a3855154/">
-                  <div className="flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#0C63BC] ease-in duration-100">
+                  <div className="flex items-center justify-center rounded-full shadow-lg dark:shadow-[#002A2e] shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-[#0C63BC] ease-in duration-100">
                     <LinkedInIcon />
                   </div>
                 </Link>
                 <Link href="https://github.com/bbek101-svg">
-                  <div className="flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-cyan-500 ease-in duration-100">
+                  <div className="flex items-center justify-center rounded-full shadow-lg dark:shadow-[#002A2e] shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-cyan-500 ease-in duration-100">
                     <GitHubIcon />
                   </div>
                 </Link>
                 <Link href="mailto:bibek.regmi110@gmail.com">
-                  <div className="flex items-center justify-center rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-pink-500 ease-in duration-100">
+                  <div className="flex items-center justify-center rounded-full shadow-lg dark:shadow-[#002A2e] shadow-gray-400 p-3 cursor-pointer hover:scale-105 hover:text-pink-500 ease-in duration-100">
                     <SendIcon />
                   </div>
                 </Link>
