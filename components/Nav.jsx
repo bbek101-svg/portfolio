@@ -27,7 +27,7 @@ function Nav() {
       router.asPath === "/boostyyc"
     ) {
       setNavBg("transparent");
-      setNavColor("#fdfdfd");
+      setNavColor("#f0f0f0");
       setMenuColor("#ecf0f3");
     } else {
       setMenuColor("#374151");
@@ -52,9 +52,9 @@ function Nav() {
   useEffect(() => {
     if (darkMode) {
       setNavBg("#001B1D");
-      setNavColor("#fdfdfd");
+      setNavColor("#f0f0f0");
     } else {
-      setNavBg("#fdfdfd");
+      setNavBg("#f0f0f0");
       setNavColor("#333333");
     }
     if (
@@ -63,7 +63,7 @@ function Nav() {
       router.asPath === "/boostyyc"
     ) {
       setNavBg("transparent");
-      setNavColor("#fdfdfd");
+      setNavColor("#f0f0f0");
       setMenuColor("#ecf0f3");
     }
   }, [darkMode]);
@@ -227,7 +227,7 @@ function Nav() {
         <div
           className={
             open
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#001B1D] dark:text-[#FDFDFD] bg-[#ecf0f3] p-10 ease-in-out duration-300"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#001B1D] dark:text-[#f0f0f0] bg-[#ecf0f3] p-10 ease-in-out duration-300"
               : "fixed left-[-100%] top-0 p-10 ease-in-out duration-300"
           }
         >

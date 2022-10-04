@@ -16,7 +16,7 @@ function Projects() {
       title: "Whale Succulent E-commerce",
       projImage: whaleSucculent,
       projectUrl: "/whale",
-      tags: ["React", "Mongo", "Express", "Node", "Stripe", "GraphQL"],
+      tags: ["React", "MongoDB", "Express", "Node", "Stripe", "GraphQL"],
     },
     {
       id: 2,

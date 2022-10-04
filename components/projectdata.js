@@ -9,7 +9,7 @@ export const projects = [
     projectUrl: "/whale",
     tags: [
       "React",
-      "Mongo",
+      "MongoDB",
       "Express",
       "Node",
       "Stripe",
