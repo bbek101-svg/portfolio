@@ -33,6 +33,7 @@ export const projects = [
     projectUrl: "/boostyyc",
     tags: [
       "Next",
+      "REST API",
       "Material UI",
       "Google Maps API",
       "Facebook API",

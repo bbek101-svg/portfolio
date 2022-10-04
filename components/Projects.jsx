@@ -33,6 +33,7 @@ function Projects() {
       tags: [
         "Next",
         "MaterialUI",
+        "RestAPI",
         "GoogleMapsAPI",
         "JavaBackend",
         "FacebookAPI",
