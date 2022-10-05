@@ -16,6 +16,8 @@ import python from "../public/assets/skills/python.png";
 import sass from "../public/assets/skills/sass.png";
 import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind-css.png";
+import tensorflow from "../public/assets/skills/tensorflow.png";
+
 import Meta from "./Meta";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
@@ -39,9 +41,10 @@ function Skills() {
     { name: "mysql", skillImg: mysql },
   ];
   const programming = [
-    { name: "c", skillImg: c },
+    { name: "c++", skillImg: c },
     { name: "java", skillImg: java },
     { name: "python", skillImg: python },
+    { name: "tensorflow", skillImg: tensorflow },
   ];
   const tools = [
     { name: "github", skillImg: github },
