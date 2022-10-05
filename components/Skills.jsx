@@ -10,14 +10,13 @@ import javascript from "../public/assets/skills/javascript.png";
 import jira from "../public/assets/skills/jira.png";
 import mongodb from "../public/assets/skills/mongodb.png";
 import mysql from "../public/assets/skills/mysql.png";
-import next from "../public/assets/skills/next.png";
 import nodejs from "../public/assets/skills/nodejs.png";
 import python from "../public/assets/skills/python.png";
 import sass from "../public/assets/skills/sass.png";
 import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind-css.png";
 import tensorflow from "../public/assets/skills/tensorflow.png";
-
+import nextjs from "../public/assets/skills/Nextjs.svg";
 import Meta from "./Meta";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
@@ -25,7 +24,8 @@ import { useSelector } from "react-redux";
 function Skills() {
   const darkMode = useSelector((state) => state.themeToggle.value);
   const frontend = [
-    { name: "next", skillImg: next },
+    { name: "Next", skillImg: nextjs },
+
     { name: "react", skillImg: react },
     { name: "tailwind", skillImg: tailwind },
     { name: "sass", skillImg: sass },

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function SkillRow({ skill }) {
   const colors = {
-    next: "hover:text-[#000]",
+    Next: "hover:text-[#000] dark:text-[#fff]",
     react: "hover:text-[#61dafb]",
     tailwind: "hover:text-[#38BDF8]",
     sass: "hover:text-[#cc6699]",
@@ -20,6 +20,7 @@ function SkillRow({ skill }) {
     jira: "hover:text-[#0052cc]",
     tensorflow: "hover:text-[#EC8F23]",
   };
+
   let col = `${colors[skill.name]}`;
 
   return (
