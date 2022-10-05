@@ -20,7 +20,7 @@ function ProjectRow({ title, projImage, projectUrl, tags }) {
           alt="/"
         />
         <motion.div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <motion.h3 className="mb-4 lg:text-xl text-sm dark:text-[#fdfdfd] text-white tracking-widest text-center">
+          <motion.h3 className="mb-4 lg:text-xl text-sm dark:text-[#fdfdf0] text-white tracking-widest text-center">
             {title}
           </motion.h3>
           {tags.map((tag, index) => (
