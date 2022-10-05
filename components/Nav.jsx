@@ -196,6 +196,29 @@ function Nav() {
                 04. Contact
               </motion.li>
             </Link>
+            <Link href="https://objectrecognition1.blogspot.com/">
+              <motion.li
+                initial={{
+                  opacity: 0,
+                  y: -100,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.5,
+                }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                className="ml-10 text-md uppercase relative z-10
+                   before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 
+                   transition-colors duration-300 ease-in-out"
+              >
+                05. Blog
+              </motion.li>
+            </Link>
             <div
               className="flex items-center justify-center ml-10"
               onClick={() => toggleDarkMode(toggle())}
@@ -269,6 +292,9 @@ function Nav() {
 
               <Link href="/#contact">
                 <li className="py-4 text-md">04. Contact</li>
+              </Link>
+              <Link href="https://objectrecognition1.blogspot.com/">
+                <li className="py-4 text-md">05. Blog</li>
               </Link>
               <div
                 className="py-4 text-md"
