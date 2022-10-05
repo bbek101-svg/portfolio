@@ -17,6 +17,7 @@ import react from "../public/assets/skills/react.png";
 import tailwind from "../public/assets/skills/tailwind-css.png";
 import tensorflow from "../public/assets/skills/tensorflow.png";
 import nextjs from "../public/assets/skills/Nextjs.svg";
+import mui from "../public/assets/skills/MUI.svg";
 import Meta from "./Meta";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
@@ -30,6 +31,7 @@ function Skills() {
     { name: "tailwind", skillImg: tailwind },
     { name: "sass", skillImg: sass },
     { name: "javascript", skillImg: javascript },
+    { name: "mui", skillImg: mui },
   ];
   const backend = [
     { name: "express", skillImg: express },
