@@ -208,7 +208,7 @@ function Nav() {
                 }}
                 transition={{
                   duration: 0.7,
-                  delay: 0.5,
+                  delay: 0.6,
                 }}
                 whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
                 className="ml-10 text-md uppercase relative z-10
