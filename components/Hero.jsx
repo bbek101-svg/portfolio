@@ -27,18 +27,26 @@ function Hero() {
         <div className=" max-w-[1240px] w-full h-full transition-height ease-in-out duration-100 mx-auto p-2 flex justify-center items-center">
           <div>
             <div className=" flex justify-center items-center uppercase text-sm tracking-widest text-gray-600">
-              <p className="dark:text-[#F2F2F2]">Hello, </p>
-              <div className="dark:text-[#F2F2F2]">
+              <div className="dark:text-[#F2F2F2] text-[#a456f0]">
                 <Typewriter
                   options={{
-                    strings: ["World!", "Aliens!", "Androids!"],
+                    strings: [
+                      "Hello, ",
+                      "Hola, ",
+                      "Bonjour, ",
+                      "Namaste, ",
+                      "Guten Tag, ",
+                      "Ola",
+                      "Aasalam walekum",
+                    ],
                     autoStart: true,
                     loop: true,
-                    delay: 500,
+                    delay: 300,
                     changeDelay: 70,
                   }}
                 />
               </div>
+              <p className="dark:text-[#F2F2F2]">World! </p>
             </div>
             <h1 className="dark:text-[#F2F2F2] py-4 text-gray-700">
               I am <span className="text-[#a456f0]">Bibek</span>{" "}
@@ -55,7 +63,8 @@ function Hero() {
             <p className="py-4 dark:text-[#ecebeb] text-gray-600 max-w-[70%] m-auto">
               Hello, I am a full-stack web developer who enjoys builidng
               products on MERN tech stack. I specialize in React/Next.js,
-              Express.js, Node.js and MongoDB along with GraphQL and Apollo.
+              Express.js, Node.js and MongoDB along with GraphQL and Apollo
+              Client.
             </p>
             <motion.div className="flex items-center justify-between max-w-[300px] m-auto py-6">
               <Link href="https://www.linkedin.com/in/bibek-regmi-7a3855154/">
