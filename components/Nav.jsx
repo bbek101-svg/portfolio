@@ -197,7 +197,7 @@ function Nav() {
               </motion.li>
             </Link>
             <div
-              className="flex items-center justify-center ml-4"
+              className="flex items-center justify-center ml-10"
               onClick={() => toggleDarkMode(toggle())}
             >
               <li>
