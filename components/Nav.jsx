@@ -95,7 +95,7 @@ function Nav() {
             className={
               open
                 ? "hidden"
-                : "cursor-pointer text-[#a456f0] tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
+                : "cursor-pointer bg-gradient-to-r from-[#CB218E] to-[#6617CB] bg-clip-text text-transparent tracking-wider relative z-10 before:content-[''] before:absolute before:bottom-0 before:left-0 before:h-2 before:right-0 before:z-[-10] before:bg-[#ffcc00] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 hover:before:scale-x-100 transition-colors duration-300 ease-in-out"
             }
           >
             Bibek
@@ -219,14 +219,28 @@ function Nav() {
                 05. Blog
               </motion.li>
             </Link>
-            <div
+            <motion.div
               className="flex items-center justify-center ml-10"
               onClick={() => toggleDarkMode(toggle())}
             >
-              <li>
+              <motion.li
+                initial={{
+                  opacity: 0,
+                  y: -100,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{
+                  duration: 0.7,
+                  delay: 0.7,
+                }}
+                whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+              >
                 <ToggleOffIcon />
-              </li>
-            </div>
+              </motion.li>
+            </motion.div>
           </ul>
           <div
             onClick={handleOpen}

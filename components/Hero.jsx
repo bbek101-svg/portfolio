@@ -31,13 +31,13 @@ function Hero() {
                 <Typewriter
                   options={{
                     strings: [
-                      "Hello, ",
-                      "Hola, ",
-                      "Bonjour, ",
-                      "Namaste, ",
-                      "Guten Tag, ",
-                      "Ola",
-                      "Aasalam walekum",
+                      "Hello,",
+                      "Hola,",
+                      "Bonjour,",
+                      "Namaste,",
+                      "Guten Tag,",
+                      "Ola,",
+                      "Aasalam walekum,",
                     ],
                     autoStart: true,
                     loop: true,
@@ -49,7 +49,10 @@ function Hero() {
               <p className="dark:text-[#F2F2F2]">World! </p>
             </div>
             <h1 className="dark:text-[#F2F2F2] py-4 text-gray-700">
-              I am <span className="text-[#a456f0]">Bibek</span>{" "}
+              I am{" "}
+              <span className="bg-gradient-to-r from-[#CB218E] to-[#6617CB] bg-clip-text text-transparent">
+                Bibek
+              </span>{" "}
               <span>Regmi</span>{" "}
             </h1>
 
