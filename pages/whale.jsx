@@ -70,15 +70,15 @@ function Whale() {
               transition={{ duration: 0.5, delay: 0.5 }}
               className="py-2 dark:text-[#ecebdb]"
             >
-              An e-commerce platform for byuing and selling Succulent plants.
+              An e-commerce platform for buying and selling succulent plants.
               The platform was built using MERN (MongoDB, Express.js, React.js
-              and Node) with an addition of GraphQL for querying purposes. React
-              along with Material UI and Framer motion was used for creating a
-              seemless and intuitive User Interface where as the backend was
-              build using Node, express and GraphQL. GraphQL was used for making
-              queries to the MongoDB database. All the technologies were self
-              taught which provided a great learning experience of the MERN
-              stack.
+              and Node.js) with an addition of GraphQL for querying purposes.
+              React along with Material UI and Framer motion was used for
+              creating a seemless and intuitive User Interface where as the
+              backend was built using Node, express and GraphQL. GraphQL was
+              used for making queries to the MongoDB database. All the
+              technologies were self taught which provided a great learning
+              experience of the MERN stack.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: -100 }}
@@ -89,8 +89,8 @@ function Whale() {
             >
               The website provided a platform for buying and selling the
               succulent plants. We worked with a client to translate her
-              business need into tangible software features. The platform
-              comprised of Home pages, COllection Pages for Succulents, Pots,
+              business needs into tangible software features. The platform
+              comprised of Home page, Collection pages for Succulents, Pots,
               Soils and Grow Lights. The website also consisted of Admin
               functionality to allow the client to add, update and delete any
               products in the inventory.
