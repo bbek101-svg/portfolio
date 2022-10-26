@@ -69,16 +69,28 @@ function Portfolio() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               My very own portfolio website showcasing all my skills and
-              projects. I undertook the process of builidng the website in Next
-              JS and Tailwind CSS with an aim to learn more about the
+              projects. I undertook the process of builidng the website in
+              Next.js and Tailwind CSS with an aim to learn more about these
               technologies. The portfolio website is fully responsive utilizing
               Tailwind CSS and is hosted on vercel platform.
+            </motion.p>
+            <motion.p
+              className="py-2 dark:text-[#ecebdb]"
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              I also implemented the Framer motion library to add some cool
+              animations and user interaction feedbacks. I found that adding
+              those little touches made the website more engaging and fun to
+              look through.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: -100 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
               className="py-2 dark:text-[#ecebdb]"
             >
               The idea for my portfolio was to play around with new
