@@ -95,6 +95,20 @@ function Whale() {
               functionality to allow the client to add, update and delete any
               products in the inventory.
             </motion.p>
+            <Link href="https://succulent-frontend.vercel.app/">
+              <motion.button
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 1 }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                className="px-4 py-2 mr-4 mt-4 w-50 relative z-10
+                   before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-[-10] before:rounded-lg before:bg-[#a456f0] before:scale-x-0 before:origin-left before:transition-transform before:ease-in-out before:duration-300 
+                   hover:before:scale-x-100 hover:text-white 
+                   transition-colors duration-300 ease-in-out"
+              >
+                Demo
+              </motion.button>
+            </Link>
 
             <Link href="https://github.com/WhaleSucculent/succulent_frontend">
               <motion.button
