@@ -74,7 +74,7 @@ function Boostyyc() {
               Hosted in the Platform Calgary, I participated in the Hackathon
               event where many participants from different backgrounds and
               skills came together to compete to solve some of the pressing
-              problem in the downtown of the Calgary.
+              problems in the downtown Calgary.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: -100 }}
@@ -88,10 +88,23 @@ function Boostyyc() {
               point of the website was its authenticity as it was a website
               linked with the City of the Calgary. The users create an event in
               the website and that event is then promoted to various social
-              media handles of the City of Calgry Events. We used facebook API
-              to post the created events to Facebook, Instagram and even
-              Twitter. The backend was made with Java Spring boot and REST API
-              was used in the Next JS to get data from the various end points.
+              media handles of the City of Calgry Events.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: -100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 1 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="py-2 dark:text-[#ecebdb]"
+            >
+              We implemented facebook API to post the created events to
+              Facebook, Instagram and used Twitter API for pushing the event to
+              the twitter handle of City of Calgary. The backend was done with
+              Java Spring boot and REST API was used in the Next JS to get data
+              from the various end points. Overall, it was a fun as well as
+              stressful experience in trying to complete the front end and back
+              end of the web application in 24 hours while implementing those
+              APIs to dispatch the posts to various social media handles.
             </motion.p>
             <Link href="https://github.com/ashgrover/yyctech2022frontend">
               <motion.button
