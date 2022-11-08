@@ -20,6 +20,7 @@ function SkillRow({ skill }) {
     jira: "hover:text-[#0052cc]",
     tensorflow: "hover:text-[#EC8F23]",
     mui: "hover:text-[#0081CB]",
+    jest: "hover:text-[#C63D14]",
   };
 
   let col = `${colors[skill.name]}`;

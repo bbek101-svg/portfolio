@@ -18,7 +18,7 @@ import tailwind from "../public/assets/skills/tailwind-css.png";
 import tensorflow from "../public/assets/skills/tensorflow.png";
 import nextjs from "../public/assets/skills/Nextjs.svg";
 import mui from "../public/assets/skills/MUI.svg";
-import jest from "../public/assets/skills/Jest.png";
+import jest from "../public/assets/skills/jest.png";
 import Meta from "./Meta";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
