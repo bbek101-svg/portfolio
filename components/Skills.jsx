@@ -149,7 +149,7 @@ function Skills() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="py-4 tracking-wider text-gray-700 dark:text-[#F2F2F2]"
             >
-              Management Tools
+              Project Tools
             </motion.h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 dark:text-[#F2F2F2]">
               {tools.map((skill, index) => (
